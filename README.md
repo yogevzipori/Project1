@@ -1,2 +1,2 @@
-# Project1
-Web Game
+# Project1 - Web Game
+
