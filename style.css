@@ -1,3 +1,55 @@
 h1{
+    text-align: center;
     color: aqua
+    
 }
+
+h2.ttt{
+    text-align: center;
+   animation:blinking 8.5s infinite;
+        }
+        @keyframes blinking{
+        0%{   color: rgba(0, 102, 255, 0.9);   }
+        47%{   color: rgb(0, 0, 0); }
+        62%{   color: transparent; }
+        97%{   color:transparent; }
+        100%{  color: rgb(0, 0, 0);   }
+        }
+
+h2{
+    text-align: center;
+}
+
+
+body {
+background-color: darkolivegreen;
+}
+    .game-body {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        width: 306px;
+        margin: 50px auto;
+        justify-content: center;
+    }
+    .box {
+        width: 120px;
+        height: 120px;
+        box-shadow: 0 0 0 1px #333333;
+        border: 2px solid #333333;
+        cursor: cell;
+        line-height: 120px;
+        font-size: 120px;
+        font-family: "Permanent Marker", cursive;
+        text-align: center;
+
+    }
+    
+    .gameRestart{
+        margin: 0;
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+    }
