@@ -33,10 +33,16 @@ background-color: darkolivegreen;
     .game-body {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        width: 306px;
-        margin: 50px auto;
+        /* width: 306px; */
+        /* margin: 50px auto; */
         justify-content: center;
         max-width: 300px;
+        text-align: center;
+        margin-left:50%;
+        margin-right:50%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+
     }
     .box {
         width: 120px;
@@ -58,5 +64,11 @@ background-color: darkolivegreen;
         border-radius: 5px;
         text-align: center;
         position: absolute;
-        margin-left: 100px;
+        /* margin-left: 100px; */
+    }
+
+    .lower{
+        display: flex;
+        justify-content: center;
+
     }
