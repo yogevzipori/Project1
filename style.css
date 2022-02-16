@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
 h1{
     text-align: center;
     color: aqua
@@ -30,6 +36,7 @@ background-color: darkolivegreen;
         width: 306px;
         margin: 50px auto;
         justify-content: center;
+        max-width: 300px;
     }
     .box {
         width: 120px;
@@ -45,11 +52,11 @@ background-color: darkolivegreen;
     }
     
     .gameRestart{
-        margin: 0;
+        width: 200px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
         position: absolute;
-        top: 67%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
+        margin-left: 100px;
     }

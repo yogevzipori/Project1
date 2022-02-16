@@ -1,19 +1,28 @@
+let player1turn = true
 
 
-// const player1 = document.querySelector('.game-body')
+const player1 = document.querySelector('.game-body')
+player1.addEventListener('click', function(e){
+    if( player1turn === true){
+        e.target.innerText = 'X';
+    player1turn = false
+    
+    }
+else{
+    e.target.innerText = 'O';
+player1turn = true
+}
 
-// player1.addEventListener('click', function(e){
-//     e.target.style.backgroundColor = 'blue';
-// })
-
-const player1 = "X";
-const X = document.querySelector('.game-body')
-X.addEventListener('click', function(e){
-    e.target.innerText = 'X';
 })
 
 
-const playerAi = "O";
+
+
+
+
+let board = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
+
+  
 
 const winCombos = [
 [0, 1, 2, 3],
@@ -23,36 +32,16 @@ const winCombos = [
 [12, 9, 6, 3],
 [0, 5, 10, 15],
 [3, 6, 9, 12]
+
 ]
 
-const boxElement = document.querySelectorAll('.box');
-console.log(boxElement)
 
-const gameBodyElement = document.getElementsByClassName('[.gameBody]');
-console.log(gameBodyElement)
+const TIE = 'TIE';
 
-const winningMessageElement = document.getElementById('winningMessageText')
-console.log (winningMessageElement)
+const boxElement = document.getElementsByClassName('.box');
+
+const BodyElement = document.getElementsByClassName('.gameBody');
+
+const winningMessage = document.getElementById('winningMessageText')
 
 const restartButton = document.getElementsByClassName('.gameRestart')
-console.log (restartButton)
-
-let isPlayerOTurn = false
-
-
-// const boxes = document.querySelectorAll('.box');
-
-// startGame();
-// function startGame() {
-//     // document.querySelector('.gameRestart').style.display = "none"
-// }
-
-
-
-
-
-
-
-
-
-
