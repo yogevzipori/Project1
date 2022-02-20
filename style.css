@@ -1,72 +1,92 @@
 * {
-    padding: 0;
-    margin: 0;
-    
+  padding: 0;
+  margin: 0;
 }
 
-h1{
-    text-align: center;
-    color: aqua
-    
+h1 {
+  text-align: center;
+  color: aqua;
 }
 
-h2.ttt{
-    text-align: center;
-   animation:blinking 8.5s infinite;
-        }
-        @keyframes blinking{
-        0%{   color: rgba(0, 102, 255, 0.9);   }
-        47%{   color: rgb(0, 0, 0); }
-        62%{   color: transparent; }
-        97%{   color:transparent; }
-        100%{  color: rgb(0, 0, 0);   }
-        }
-
-h2{
-    text-align: center;
+h2.ttt {
+  text-align: center;
+  animation: blinking 8.5s infinite;
+}
+@keyframes blinking {
+  0% {
+    color: rgba(0, 102, 255, 0.9);
+  }
+  47% {
+    color: rgb(0, 0, 0);
+  }
+  62% {
+    color: transparent;
+  }
+  97% {
+    color: transparent;
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
 }
 
+h2 {
+  text-align: center;
+}
 
 body {
-background-color: darkolivegreen;
+  background-color: darkolivegreen;
 }
-    .game-body {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        justify-content: center;
-        max-width: 300px;
-        text-align: center;
-        margin-left:50%;
-        margin-right:50%;
-        margin-bottom: 2%;
-        margin-top: 2%;
+.game-body {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.box {
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 0 3px #333333;
+  border: 2px solid #333333;
+  cursor: cell;
+  line-height: 120px;
+  font-size: 120px;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
 
-    }
-    .box {
-        width: 120px;
-        height: 120px;
-        box-shadow: 0 0 0 1px #333333;
-        border: 2px solid #333333;
-        cursor: cell;
-        line-height: 120px;
-        font-size: 120px;
-        font-family: "Permanent Marker", cursive;
-        text-align: center;
+.gameReset {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+}
 
-    }
-    
-    .gameReset{
-        width: 200px;
-        font-size: 20px;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        position: absolute;
-        /* margin-left: 100px; */
-    }
+.lower {
+  display: flex;
+  justify-content: center;
+}
 
-    .lower{
-        display: flex;
-        justify-content: center;
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  /* align-items: top; */
+  font-size: 45px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  width: 300px;
+  height: 150px;
+  box-shadow: inset 0 0 10px #333333;
+  border: 4px solid #333333;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 70px;
 
-    }
+}
