@@ -6,23 +6,17 @@ player1.addEventListener('click', function(e){
     if( player1turn === true){
         e.target.innerText = 'X';
     player1turn = false
-    
+
     }
-else{
+
+else{ 
     e.target.innerText = 'O';
 player1turn = true
-}
 
+}
 })
 
 
-
-
-
-
-let board = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', ''];
-
-  
 
 const winCombos = [
 [0, 1, 2, 3],
@@ -31,17 +25,16 @@ const winCombos = [
 [12, 13, 14, 15],
 [12, 9, 6, 3],
 [0, 5, 10, 15],
-[3, 6, 9, 12]
+[3, 6, 9, 12],
+[3, 7, 11, 15],
+[2,6, 10, 14],
+[1, 5, 9, 13 ],
+[0, 4, 8, 12]
+];
 
-]
 
 
-const TIE = 'TIE';
-
-const boxElement = document.getElementsByClassName('.box');
-
-const BodyElement = document.getElementsByClassName('.gameBody');
-
-const winningMessage = document.getElementById('winningMessageText')
-
-const restartButton = document.getElementsByClassName('.gameRestart')
+document.querySelector('.gameReset').addEventListener('click', function(){
+location.reload();
+  
+  });

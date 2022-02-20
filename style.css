@@ -33,8 +33,6 @@ background-color: darkolivegreen;
     .game-body {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        /* width: 306px; */
-        /* margin: 50px auto; */
         justify-content: center;
         max-width: 300px;
         text-align: center;
@@ -57,7 +55,7 @@ background-color: darkolivegreen;
 
     }
     
-    .gameRestart{
+    .gameReset{
         width: 200px;
         font-size: 20px;
         padding: 10px;
