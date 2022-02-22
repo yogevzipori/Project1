@@ -5,11 +5,16 @@
 
 h1 {
   text-align: center;
+  font-family: "Permanent Marker", cursive;
   color: aqua;
+  font-size: 70px;
 }
 
 h2.ttt {
   text-align: center;
+  font-size: 50px;
+
+  font-family: "Permanent Marker", cursive;
   animation: blinking 8.5s infinite;
 }
 @keyframes blinking {
@@ -69,7 +74,7 @@ body {
   position: absolute;
 }
 
-.lower {
+.lower{
   display: flex;
   justify-content: center;
 }
@@ -77,8 +82,8 @@ body {
 .scoreboard {
   display: flex;
   justify-content: center;
-  /* align-items: top; */
   font-size: 45px;
+  font-weight: bolder;
   text-align: center;
   font-family: "Permanent Marker", cursive;
   width: 300px;
@@ -88,5 +93,15 @@ body {
   margin: 0 auto;
   padding: 10px;
   margin-top: 70px;
+}
 
+.score {
+  
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  
+  
 }

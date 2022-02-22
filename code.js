@@ -1,16 +1,27 @@
-// Players
+// Player
 let player1turn = true;
 
-// Marking on the board x and o
+// Marking on the board X and O
 const gameBody = document.querySelector(".game-body");
 gameBody.addEventListener("click", function (e) {
-  if (player1turn === true && e.target.innerText != "O"&& e.target.innerText != "X") {
+  if (
+    player1turn === true &&
+    e.target.innerText != "O" &&
+    e.target.innerText != "X"
+  ) {
     e.target.innerText = "X";
     player1turn = false;
-  } else if (player1turn === false && e.target.innerText != "O" && e.target.innerText != "X") {
+  } else if (
+    player1turn === false &&
+    e.target.innerText != "O" &&
+    e.target.innerText != "X"
+  ) {
     e.target.innerText = "O";
     player1turn = true;
-  } checkWinningCondition()
+  }
+
+  // Every click a function run to check winning combos
+  checkWinningCondition();
 });
 
 // Winning possibilities
@@ -26,13 +37,16 @@ const winCombos = [
   [3, 7, 11, 15],
   [2, 6, 10, 14],
   [1, 5, 9, 13],
-  [0, 4, 8, 12]
+  [0, 4, 8, 12],
 ];
 
-function checkWinningCondition(){
+// function to check Winning Condition
 
+function checkWinningCondition() {
+  for (let i = 0; i < winCombos.length; i++) {
+    console.log(winCombos[i]);
+  }
 }
-
 
 // Resetting Game Board
 document.querySelector(".gameReset").addEventListener("click", function () {
