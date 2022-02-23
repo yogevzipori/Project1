@@ -37,10 +37,10 @@ const winCombos = [
   [3, 7, 11, 15],
   [2, 6, 10, 14],
   [1, 5, 9, 13],
-  [0, 4, 8, 12],
+  [0, 4, 8, 12]
 ];
 
-// function to check Winning Condition
+// function to check Winning Conditions
 
 function checkWinningCondition() {
   for (let i = 0; i < winCombos.length; i++) {
